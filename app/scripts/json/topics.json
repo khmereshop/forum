@@ -1,0 +1,31 @@
+[
+  {
+    "id":1,
+    "category": "Announcement",
+    "icon":"",
+    "subcategory": [
+      {"id":1,"title":"Mailbox","icon":"inbox","item":[]}
+    ]
+  },
+
+  {
+    "id":2,
+    "category": "General discussion",
+    "icon":"",
+    "subcategory": [
+      {"id":1,"title":"Introduction","icon":"intro","item":[]},
+      {"id":2,"title":"Art","icon":"art","item":[]},
+      {"id":3,"title":"Media","icon":"media","item":[]}
+    ]
+  },
+
+  {
+    "id":3,
+    "category": "Server discussion",
+    "icon":"",
+    "subcategory": [
+      {"id":1,"title":"Team fortress 2","icon":"team","item":[]}
+    ]
+  }
+
+]

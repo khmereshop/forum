@@ -14,6 +14,10 @@ appApp .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
                 viewHome: {
                     templateUrl: 'views/home.html',
                     controller: 'HomeCtrl'
+                },
+                'viewTopic@home': {
+                    templateUrl: 'views/topic.html',
+                    controller: 'TopicCtrl'
                 }
             }
         })
