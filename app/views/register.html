@@ -1,0 +1,27 @@
+<div ng-cloak>
+    <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="Account">
+                <md-content class="md-padding">
+
+                    <div ui-view="viewAccount"></div>
+
+                </md-content>
+            </md-tab>
+            <md-tab label="Profile">
+                <md-content class="md-padding">
+
+                    <div ui-view="viewProfile"></div>
+
+                </md-content>
+            </md-tab>
+            <md-tab label="Photo">
+                <md-content class="md-padding">
+
+                    <div ui-view="viewPhoto"></div>
+
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

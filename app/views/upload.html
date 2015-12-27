@@ -1,0 +1,26 @@
+<md-content layout-padding>
+    <section layout-gt-sm="row">
+        <label>Photo</label>
+        <input type="file" nv-file-select uploader="uploader"/>
+    </section>
+    <section layout-gt-sm="row">
+        <md-list>
+            <md-list-item ng-repeat="item in uploader.queue">
+                <div class="row">
+                    <label class="col-sm-2">Name</label>
+                    <label class="col-sm-8" ng-bind="item.file.name"></label>
+                    <div class="col-sm-2">
+                        <md-button class="md-raised md-primary" ng-click="item.upload()">upload</md-button>
+                    </div>
+                </div>
+            </md-list-item>
+        </md-list>
+    </section>
+    <section layout-gt-sm="row">
+        <div class="progress" ng-show="progressflag==true">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{uploader.progress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{uploader.progress}}%">
+                {{uploader.progress}} %
+            </div>
+        </div>
+    </section>
+</md-content>
