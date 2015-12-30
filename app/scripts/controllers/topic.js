@@ -8,7 +8,7 @@
  * Controller of the appApp
  */
 angular.module('appApp')
-  .controller('TopicCtrl',['$scope','ajaxService','shareService', function ($scope, ajaxService, shareService) {
+  .controller('TopicCtrl',['$scope','ajaxService','shareService','$location', function ($scope, ajaxService, shareService,$location) {
 
       $scope.topics=[];
       var ajax=ajaxService.getAjax(TOPICURL,{},'get');
@@ -21,6 +21,12 @@ angular.module('appApp')
             console.log(err);
         }
       );
+
+      $scope.goto=function(index) {
+          var subcat=$scope.topics[index];
+          shareService.setSubcat(subcat);
+          $location.path('/home/subcategory');
+      };
 
 
   }]);

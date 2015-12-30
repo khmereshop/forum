@@ -1,6 +1,6 @@
-<md-content ng-repeat="topic in topics track by $index">
-    <h1>{{topic.category}}</h1>
-    <section>
-
-    </section>
-</md-content>
+<md-grid-list ng-repeat="topic in topics track by $index">
+    <md-grid-title class="blue" ng-click="goto($index)"><h3><i class="glyphicon glyphicon-chevron-right"></i> {{topic.title}}</h3></md-grid-title>
+    <p>
+        {{topic.description}}
+    </p>
+</md-grid-list>

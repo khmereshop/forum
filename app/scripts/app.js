@@ -21,6 +21,17 @@ appApp .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
                 }
             }
         })
+
+        .state('home.viewTopic', {
+            url:'/subcategory',
+            views: {
+                'viewTopic': {
+                    templateUrl: 'views/subcategory.html',
+                    controller: 'SubcategoryCtrl'
+                }
+            }
+        })
+
         .state('register', {
             url:'/register',
             views: {

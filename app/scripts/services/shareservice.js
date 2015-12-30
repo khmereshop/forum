@@ -10,6 +10,16 @@
 angular.module('appApp')
   .service('shareService', function () {
     var factory={};
+
+     factory.subcat={};
+     factory.setSubcat=function(data) {
+         factory.subcat=data;
+     };
+
+     factory.getSubcat=function(){
+       return factory.subcat;
+     };
+
     factory.person={};
     factory.setPerson=function(data){
         factory.person=data;

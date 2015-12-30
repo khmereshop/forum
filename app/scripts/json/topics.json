@@ -1,7 +1,8 @@
 [
   {
     "id":1,
-    "category": "Announcement",
+    "title": "Announcement",
+    "description":"Post your announcement about your community",
     "icon":"",
     "subcategory": [
       {"id":1,"title":"Mailbox","icon":"inbox","item":[]}
@@ -10,7 +11,8 @@
 
   {
     "id":2,
-    "category": "General discussion",
+    "title": "General discussion",
+    "description":"Post your general discussion and your questions",
     "icon":"",
     "subcategory": [
       {"id":1,"title":"Introduction","icon":"intro","item":[]},
@@ -21,7 +23,8 @@
 
   {
     "id":3,
-    "category": "Server discussion",
+    "title": "Server discussion",
+    "description":"Post your server discussion here",
     "icon":"",
     "subcategory": [
       {"id":1,"title":"Team fortress 2","icon":"team","item":[]}
