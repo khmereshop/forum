@@ -14,20 +14,56 @@ appApp .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
                 viewHome: {
                     templateUrl: 'views/home.html',
                     controller: 'HomeCtrl'
-                },
-                'viewTopic@home': {
+                }
+            }
+        })
+
+        .state('topics', {
+            url:'/topics',
+            views: {
+                'viewHome': {
                     templateUrl: 'views/topic.html',
                     controller: 'TopicCtrl'
                 }
             }
         })
 
-        .state('home.viewTopic', {
-            url:'/subcategory',
+        .state('members', {
+            url:'/members',
             views: {
-                'viewTopic': {
+                'viewHome': {
+                    templateUrl: 'views/member.html',
+                    controller: 'MemberCtrl'
+                }
+            }
+        })
+
+        .state('user', {
+            url:'/user/:id',
+            views: {
+                'viewHome': {
+                    templateUrl: 'views/user.html',
+                    controller: 'UserCtrl'
+                }
+            }
+        })
+
+        .state('subcategory', {
+            url:'/subcategory/:id',
+            views: {
+                'viewHome': {
                     templateUrl: 'views/subcategory.html',
                     controller: 'SubcategoryCtrl'
+                }
+            }
+        })
+
+        .state('forum', {
+            url:'/forum/:id',
+            views: {
+                'viewHome': {
+                    templateUrl: 'views/forum.html',
+                    controller: 'ForumCtrl'
                 }
             }
         })

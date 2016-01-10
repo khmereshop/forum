@@ -1,0 +1,11 @@
+{
+  "id":1,
+  "gender":"Mr",
+  "nickname":"Sam",
+  "photo":"/images/who.png",
+  "location":"Lowell,MA",
+  "status":"OnLine",
+  "age":18,
+  "bio":"This is my biography that describe about myself"
+
+}

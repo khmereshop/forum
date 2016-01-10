@@ -8,10 +8,24 @@
  * Controller of the appApp
  */
 angular.module('appApp')
-  .controller('MemberCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MemberCtrl', ['$scope','ajaxService','shareService','$location',function ($scope,ajaxService,shareService, $location) {
+
+      $scope.members=[];
+      var ajax=ajaxService.getAjax(MEMBERURL,{},'get');
+      ajax.then(
+          function(data){
+              $scope.members=data;
+          },
+          function(err){
+              console.log(err);
+          }
+
+      );
+
+      $scope.goto=function(data) {
+
+          $location.path('/user/'+data.id);
+      };
+
+
+  }]);

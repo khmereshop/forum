@@ -8,10 +8,26 @@
  * Controller of the appApp
  */
 angular.module('appApp')
-  .controller('ForumCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('ForumCtrl', ['$scope','shareService','ajaxService','$stateParams',function ($scope,shareService,ajaxService,$stateParams) {
+
+      // the subcat variable get data from shareService
+      $scope.subcat=shareService.getSubcat();
+      // the childcat variable get data from shareService
+      $scope.childcat=shareService.getChildcat();
+      // initialize a variable
+      $scope.forums=[]; // array variable
+
+      // create an ajax call
+      var param={};
+      param.id=$stateParams.id;
+      var ajax=ajaxService.getAjax(FORUMURL,param,'get');
+      ajax.then(
+          function(data) {
+              $scope.forums=data;
+          },
+          function(err){
+              console.log(err);
+          }
+      );
+
+  }]);

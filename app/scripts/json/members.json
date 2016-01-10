@@ -1,0 +1,14 @@
+[
+  {"id":1,"gender":"Mr","nickname":"Sam","photo":"/images/who.png","location":"Lowell,MA","status":"OnLine"},
+  {"id":2,"gender":"Mr","nickname":"John","photo":"/images/who.png","location":"Billerica,MA","status":"OffLine"},
+  {"id":3,"gender":"Mrs","nickname":"Mary","photo":"/images/who.png","location":"Modesto,CA","status":"OnLine"},
+  {"id":4,"gender":"Ms","nickname":"Lisa","photo":"/images/who.png","location":"San Jose, CA","status":"OffLine"},
+  {"id":5,"gender":"Ms","nickname":"Bopha","photo":"/images/who.png","location":"San Jose, CA","status":"OffLine"},
+  {"id":6,"gender":"Mr","nickname":"Smith","photo":"/images/who.png","location":"Boston, MA","status":"OnLine"},
+  {"id":7,"gender":"Mr","nickname":"Long","photo":"/images/who.png","location":"Lynn, MA","status":"OnLine"},
+  {"id":8,"gender":"Mrs","nickname":"Jones","photo":"/images/who.png","location":"Michigan, OH","status":"OffLine"},
+  {"id":9,"gender":"Mr","nickname":"Ross","photo":"/images/who.png","location":"Denver, CO","status":"OffLine"},
+  {"id":10,"gender":"Mrs","nickname":"Leng","photo":"/images/who.png","location":"San Francisco, CA","status":"OnLine"},
+  {"id":11,"gender":"Mr","nickname":"Wang","photo":"/images/who.png","location":"Dracut, MA","status":"OffLine"},
+  {"id":12,"gender":"Mr","nickname":"Chang","photo":"/images/who.png","location":"San Jose, CA","status":"OffLine"}
+]

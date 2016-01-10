@@ -12,15 +12,26 @@ angular.module('appApp')
     var factory={};
 
      factory.subcat={};
+      //setter , set data to store in subcat variable
      factory.setSubcat=function(data) {
          factory.subcat=data;
      };
-
+     //getter, get data that store in subcat variable
      factory.getSubcat=function(){
        return factory.subcat;
      };
 
-    factory.person={};
+      factory.childcat={};
+      factory.setChildcat=function(data) {
+          factory.childcat=data;
+      };
+
+      factory.getChildcat=function(){
+          return factory.childcat;
+      };
+
+
+      factory.person={};
     factory.setPerson=function(data){
         factory.person=data;
     };

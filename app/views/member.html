@@ -1,1 +1,8 @@
-<p>This is the member view.</p>
+<table class="table">
+    <tr ng-repeat="m in members track by $index" ng-click="goto(m)">
+        <td><img src="{{m.photo}}" class="md-avatar"/></td>
+        <td>{{m.gender}} {{m.nickname}}</td>
+        <td>{{m.location}}</td>
+        <td>{{m.status}}</td>
+    </tr>
+</table>

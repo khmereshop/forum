@@ -8,7 +8,22 @@
  * Controller of the appApp
  */
 
-appApp.controller('HomeCtrl', ['$scope',function ($scope) {
-    $scope.msg='Hello world';
+appApp.controller('HomeCtrl', ['$scope','$location',function ($scope, $location) {
+
+    $scope.goto=function(index) {
+      switch(index) {
+          case 0:
+                $location.path('/home');
+          break;
+          case 1:
+                $location.path('/home/topic');
+          break;
+          case 2:
+              $location.path('/home/members');
+          break;
+
+      }
+    };
+
 
 }]);

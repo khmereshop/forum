@@ -25,7 +25,7 @@ angular.module('appApp')
       $scope.goto=function(index) {
           var subcat=$scope.topics[index];
           shareService.setSubcat(subcat);
-          $location.path('/home/subcategory');
+          $location.path('/subcategory/'+subcat.id);
       };
 
 

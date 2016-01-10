@@ -1,4 +1,11 @@
 <ul class="breadcrumb">
-    <li><a href="#home">Topics</a></li>
+    <li><a href="#/topics">Topics</a></li>
     <li class="active">{{subcat.title}}</li>
 </ul>
+
+<div class="panel panel-primary" ng-repeat="s in subcat.subcategory track by $index" ng-click="goto($index)">
+    <div class="panel-heading">{{s.title}}</div>
+    <div class="panel-body">
+        {{s.description}}
+    </div>
+</div>

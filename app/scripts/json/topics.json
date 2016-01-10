@@ -5,7 +5,7 @@
     "description":"Post your announcement about your community",
     "icon":"",
     "subcategory": [
-      {"id":1,"title":"Mailbox","icon":"inbox","item":[]}
+      {"id":1,"title":"Mailbox","icon":"inbox","description":"Post question about your mailbox","item":[]}
     ]
   },
 
@@ -15,9 +15,9 @@
     "description":"Post your general discussion and your questions",
     "icon":"",
     "subcategory": [
-      {"id":1,"title":"Introduction","icon":"intro","item":[]},
-      {"id":2,"title":"Art","icon":"art","item":[]},
-      {"id":3,"title":"Media","icon":"media","item":[]}
+      {"id":1,"title":"Introduction","icon":"intro","description":"Post introduction to your forum","item":[]},
+      {"id":2,"title":"Art","icon":"art","description":"Post about your favorite arts","item":[]},
+      {"id":3,"title":"Media","icon":"media","description":"Post about media discussion","item":[]}
     ]
   },
 
@@ -27,7 +27,7 @@
     "description":"Post your server discussion here",
     "icon":"",
     "subcategory": [
-      {"id":1,"title":"Team fortress 2","icon":"team","item":[]}
+      {"id":1,"title":"Team fortress 2","icon":"team","description":"Post about your team fortress 2","item":[]}
     ]
   }
 
