@@ -8,22 +8,20 @@
  * Controller of the appApp
  */
 
-appApp.controller('HomeCtrl', ['$scope','$location',function ($scope, $location) {
+angular.module('appApp')
+.controller('HomeCtrl', ['$scope','$location','ajaxService','shareService',function ($scope, $location, ajaxService, shareService) {
 
-    $scope.goto=function(index) {
-      switch(index) {
-          case 0:
-                $location.path('/home');
-          break;
-          case 1:
-                $location.path('/home/topic');
-          break;
-          case 2:
-              $location.path('/home/members');
-          break;
-
-      }
-    };
+    // set up an array variable
+    $scope.recentForumData=[];
+    var ajax=ajaxService.getAjax(RECENTFORUMURL,{},'get');
+    ajax.then(
+        function(data) {
+            $scope.recentForumData=data;
+        },
+        function(err) {
+            console.log(err);
+        }
+    );
 
 
 }]);

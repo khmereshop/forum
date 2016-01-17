@@ -1,0 +1,15 @@
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Topics
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li ng-repeat="data in arraydata track by $index" ng-init="index=$index">
+            <div class="padding">{{data.title}}</div>
+            <ul class="dropdown-menu-right">
+                <li ng-repeat="s in data.subcategory track by $index" ng-click="selectItem(s,index,$index)">
+                    <a><i class="glyphicon glyphicon-check" ng-show="s.checked"></i> {{s.title}} </a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

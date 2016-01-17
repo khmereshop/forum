@@ -1,0 +1,24 @@
+
+<div class="panel panel-default">
+    <div class="panel-heading">What do you have in mind today?</div>
+    <div class="panel-body">
+      <div>
+          <input type="text" ng-model="form.title" class="form-control"  maxlength="150" placeholder="Enter the title">
+      </div>
+        <br/>
+        <p>
+            <textarea ng-model="form.description" class="form-control" placeholder="Write a brief summary"></textarea>
+        </p>
+
+        <multiple-select arraydata="topics" returndata="form.topic"></multiple-select>
+
+
+    </div>
+
+    <div class="panel-footer">
+        <button class="btn btn-primary">Submit</button>
+        &nbsp;
+        <button class="btn btn-info">Clear</button>
+    </div>
+
+</div>

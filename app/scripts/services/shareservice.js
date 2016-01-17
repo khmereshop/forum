@@ -60,5 +60,15 @@ angular.module('appApp')
       }
     };
 
+    factory.addChecked=function(arr){
+      for(var i=0; i < arr.length; i++) {
+          arr[i].checked=false;
+          for(var j=0; j < arr[i].subcategory.length; j++) {
+              arr[i].subcategory[j].checked=false;
+          }
+      }
+      return arr;
+    };
+
     return factory;
   });

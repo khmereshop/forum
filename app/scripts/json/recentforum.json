@@ -1,0 +1,40 @@
+[
+  {
+    "id":100,
+    "title":"Today news about Donald Trump","description":"He is dick head",
+    "author":{"nickname":"Sam","photo":"/images/who.png"},
+    "post_date":"12/2/2015"
+  },
+
+  {
+    "id":200,
+    "title":"Lowell high give free lunch","description":"Lowell high give free lunch to every student",
+    "author":{"nickname":"John","photo":"/images/who.png"},
+    "post_date":"10/2/2015"
+  },
+
+  {
+    "id":300,
+    "title":"President Obama visiting Lowell","description":"Mr. President Obama will visit Lowell High School to congradulation Saritick",
+    "author":{"nickname":"Pat","photo":"/images/who.png"},
+    "post_date":"1/2/2016"
+  },
+
+
+  {
+    "id":400,
+    "title":"Grant to Lowell students","description":"U.S. federal government give $1 billion to Lowell students",
+    "author":{"nickname":"Ros","photo":"/images/who.png"},
+    "post_date":"4/23/2015"
+  },
+
+  {
+    "id":500,
+    "title":"Water price rising","description":"Cambodian people shortage of water so they buy more water from Vietnam",
+    "author":{"nickname":"Smith","photo":"/images/who.png"},
+    "post_date":"6/2/2015"
+  }
+
+
+
+]

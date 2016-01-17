@@ -68,6 +68,26 @@ appApp .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
             }
         })
 
+        .state('reply', {
+            url:'/reply/:id',
+            views: {
+                'viewHome': {
+                    templateUrl: 'views/reply.html',
+                    controller: 'ReplyCtrl'
+                }
+            }
+        })
+
+        .state('post', {
+            url:'/post',
+            views: {
+                'viewHome': {
+                    templateUrl: 'views/post.html',
+                    controller: 'PostCtrl'
+                }
+            }
+        })
+
         .state('register', {
             url:'/register',
             views: {

@@ -6,3 +6,4 @@ var TOPICURL='/scripts/json/topics.json';
 var FORUMURL='/scripts/json/forum.json';
 var MEMBERURL='/scripts/json/members.json';
 var PROFILEURL='/scripts/json/profile.json';
+var RECENTFORUMURL='/scripts/json/recentforum.json';

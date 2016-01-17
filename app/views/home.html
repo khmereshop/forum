@@ -1,1 +1,35 @@
-<h2>Home page</h2>
+
+<div class="row">
+    <h3 class="col-sm-6">Recent post</h3>
+    <div class="col-sm-6 text-right">
+        <a href="#/post"><i class="glyphicon glyphicon-pencil"></i> Post</a>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <tr ng-repeat="forum in recentForumData track by $index">
+        <td>
+            <img src="{{forum.author.photo}}" class="img-circle img-responsive"/>
+            <div>{{forum.author.nickname}}</div>
+        </td>
+        <td nowrap># {{$index + 1}}</td>
+        <td>
+            <h4>{{forum.title}}</h4>
+            <p>{{forum.description}}</p>
+
+            <ul class="nav nav-pills">
+               <li>
+                   <a href="#/reply/{{forum.id}}"><i class="glyphicon glyphicon-pencil"></i> Reply</a>
+               </li>
+                <li>
+                    <a href="#/edit/{{forum.id}}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                </li>
+                <li>
+                    <a href="#/delete/{{forum.id}}"><i class="glyphicon glyphicon-trash"></i> Delete</a>
+                </li>
+            </ul>
+
+        </td>
+        <td>{{forum.post_date}}</td>
+    </tr>
+</table>
